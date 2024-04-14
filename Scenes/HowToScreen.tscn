@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://bnd2xpleubswc"]
+
+[ext_resource type="PackedScene" uid="uid://dcepqs1pmviyl" path="res://Scenes/HowTo.tscn" id="1_myygj"]
+[ext_resource type="Texture2D" uid="uid://clg3j1mrr5vu5" path="res://Sprites/Digits12.png" id="2_h5fvd"]
+[ext_resource type="Script" path="res://Scripts/GameButton.gd" id="3_prdej"]
+[ext_resource type="PackedScene" uid="uid://ljkk4uw3q2yl" path="res://Scenes/Cursor.tscn" id="4_qnlkg"]
+
+[node name="HowToScreen" type="ColorRect"]
+custom_minimum_size = Vector2(480, 480)
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.941176, 0.964706, 0.941176, 1)
+
+[node name="HowTo" parent="." instance=ExtResource("1_myygj")]
+layout_mode = 1
+
+[node name="Exit" type="TextureButton" parent="."]
+modulate = Color(0.133333, 0.137255, 0.137255, 1)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -25.0
+offset_top = 26.0
+offset_right = -9.0
+offset_bottom = 42.0
+grow_horizontal = 0
+texture_normal = ExtResource("2_h5fvd")
+script = ExtResource("3_prdej")
+known_number_color = Color(0.133333, 0.137255, 0.137255, 1)
+guess_number_color = Color(0.2, 0.388235, 0.737255, 1)
+
+[node name="Cursor" parent="." instance=ExtResource("4_qnlkg")]
+offset_left = -304.362
+offset_top = 611.632
+offset_right = -304.362
+offset_bottom = 611.632
+
+[connection signal="mouse_entered" from="Exit" to="Exit" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Exit" to="Exit" method="_on_mouse_exited"]
+[connection signal="pressed" from="Exit" to="Exit" method="_on_exit_pressed"]

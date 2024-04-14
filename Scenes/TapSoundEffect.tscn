@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://k8n50eddew14"]
+
+[ext_resource type="AudioStream" uid="uid://rnehs41rlboi" path="res://Sounds/Tap.wav" id="1_tqqgk"]
+[ext_resource type="Script" path="res://Scripts/OneTimeSoundEffect.gd" id="2_blnna"]
+
+[node name="TapSoundEffect" type="AudioStreamPlayer"]
+stream = ExtResource("1_tqqgk")
+script = ExtResource("2_blnna")

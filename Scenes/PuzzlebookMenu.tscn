@@ -1,0 +1,162 @@
+[gd_scene load_steps=5 format=3 uid="uid://bux15ptjmn4fy"]
+
+[ext_resource type="Script" path="res://Scripts/PuzzlebookMenu.gd" id="1_ifh3k"]
+[ext_resource type="Texture2D" uid="uid://clg3j1mrr5vu5" path="res://Sprites/Digits12.png" id="2_02htg"]
+[ext_resource type="Script" path="res://Scripts/GameButton.gd" id="3_4xcb1"]
+[ext_resource type="PackedScene" uid="uid://ljkk4uw3q2yl" path="res://Scenes/Cursor.tscn" id="4_yeq8p"]
+
+[node name="PuzzlebooksMenu" type="CanvasLayer"]
+script = ExtResource("1_ifh3k")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.941176, 0.964706, 0.941176, 1)
+
+[node name="Title" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -168.0
+offset_top = 75.0
+offset_right = 168.0
+offset_bottom = 127.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 52
+text = "Puzzlebooks"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = -73.0
+offset_right = 97.0
+offset_bottom = 142.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 16
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Beginner: Addition and Subtration"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Beginner1Button" type="Button" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(96, 32)
+layout_mode = 2
+size_flags_vertical = 4
+text = "B1"
+
+[node name="Beginner2Button" type="Button" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(96, 32)
+layout_mode = 2
+size_flags_vertical = 4
+text = "B2 "
+
+[node name="Beginner3Button" type="Button" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(96, 32)
+layout_mode = 2
+size_flags_vertical = 4
+text = " B3 
+"
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Novice: Multiplication and Division"
+horizontal_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Novice1Button" type="Button" parent="VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(96, 32)
+layout_mode = 2
+size_flags_vertical = 4
+text = "N1"
+
+[node name="Novice2Button" type="Button" parent="VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(96, 32)
+layout_mode = 2
+size_flags_vertical = 4
+text = "N2 "
+
+[node name="Novice3Button" type="Button" parent="VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(96, 32)
+layout_mode = 2
+size_flags_vertical = 4
+text = " N3 
+"
+
+[node name="Label3" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Expert: Modulo"
+horizontal_alignment = 1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Expert1Button" type="Button" parent="VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(96, 32)
+layout_mode = 2
+size_flags_vertical = 4
+text = "E1 "
+
+[node name="Expert2Button" type="Button" parent="VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(96, 32)
+layout_mode = 2
+size_flags_vertical = 4
+text = "E2"
+
+[node name="Expert3Button" type="Button" parent="VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(96, 32)
+layout_mode = 2
+size_flags_vertical = 4
+text = "E3
+"
+
+[node name="Exit" type="TextureButton" parent="."]
+modulate = Color(0.133333, 0.137255, 0.137255, 1)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -25.0
+offset_top = 26.0
+offset_right = -9.0
+offset_bottom = 42.0
+grow_horizontal = 0
+texture_normal = ExtResource("2_02htg")
+script = ExtResource("3_4xcb1")
+known_number_color = Color(0.133333, 0.137255, 0.137255, 1)
+guess_number_color = Color(0.2, 0.388235, 0.737255, 1)
+
+[node name="Cursor" parent="." instance=ExtResource("4_yeq8p")]
+offset_left = -88.0
+offset_top = -164.0
+offset_right = -88.0
+offset_bottom = -164.0
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Beginner1Button" to="." method="_on_beginner_1_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Beginner2Button" to="." method="_on_beginner_2_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Beginner3Button" to="." method="_on_beginner_3_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/Novice1Button" to="." method="_on_novice_1_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/Novice2Button" to="." method="_on_novice_2_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/Novice3Button" to="." method="_on_novice_3_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/Expert1Button" to="." method="_on_expert_1_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/Expert2Button" to="." method="_on_expert_2_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/Expert3Button" to="." method="_on_expert_3_button_pressed"]
+[connection signal="mouse_entered" from="Exit" to="Exit" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Exit" to="Exit" method="_on_mouse_exited"]
+[connection signal="pressed" from="Exit" to="Exit" method="_on_exit_pressed"]

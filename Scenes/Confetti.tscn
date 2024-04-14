@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://drlqq0yj2rnu8"]
+
+[ext_resource type="Script" path="res://Scripts/Confetti.gd" id="1_ahe2o"]
+
+[sub_resource type="Gradient" id="Gradient_xirwf"]
+offsets = PackedFloat32Array(0, 0.309589, 0.567123, 0.789041, 0.983562)
+colors = PackedColorArray(0.988235, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1)
+
+[node name="Confetti" type="CPUParticles2D"]
+emitting = false
+amount = 70
+lifetime = 2.0
+one_shot = true
+explosiveness = 0.75
+direction = Vector2(0, -1)
+spread = 20.0
+initial_velocity_min = 762.14
+initial_velocity_max = 844.66
+damping_min = 15.049
+damping_max = 48.059
+scale_amount_min = 2.0
+scale_amount_max = 2.0
+color_initial_ramp = SubResource("Gradient_xirwf")
+hue_variation_min = -1.0
+hue_variation_max = 1.0
+script = ExtResource("1_ahe2o")

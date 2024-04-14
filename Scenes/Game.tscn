@@ -1,0 +1,83 @@
+[gd_scene load_steps=9 format=3 uid="uid://6cjjaexx1rpx"]
+
+[ext_resource type="PackedScene" uid="uid://dv2xw6ojkrh7w" path="res://Scenes/UI.tscn" id="1_6nlly"]
+[ext_resource type="Texture2D" uid="uid://d1x7wyont7yyi" path="res://Background.png" id="1_q8i5e"]
+[ext_resource type="Script" path="res://Scripts/SumManager.gd" id="2_2f8c4"]
+[ext_resource type="Script" path="res://Scripts/IncorrectAnimation.gd" id="4_dca1l"]
+[ext_resource type="PackedScene" uid="uid://drlqq0yj2rnu8" path="res://Scenes/Confetti.tscn" id="5_xmfcp"]
+
+[sub_resource type="Animation" id="Animation_w6q2j"]
+resource_name = "Default"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("IncorrectScreen:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.85098, 0.341176, 0.388235, 0), Color(0.85098, 0.341176, 0.388235, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_drxxn"]
+resource_name = "Incorrect"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("IncorrectScreen:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0.85098, 0.341176, 0.388235, 0), Color(0.85098, 0.341176, 0.388235, 0.396078), Color(0.85098, 0.341176, 0.388235, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cqxig"]
+_data = {
+"Default": SubResource("Animation_w6q2j"),
+"Incorrect": SubResource("Animation_drxxn")
+}
+
+[node name="Game" type="Node2D"]
+
+[node name="Backgroud" type="Sprite2D" parent="."]
+position = Vector2(244.5, 244.5)
+scale = Vector2(1.52813, 1.52813)
+texture = ExtResource("1_q8i5e")
+
+[node name="SumManager" type="Node2D" parent="."]
+script = ExtResource("2_2f8c4")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" parent="CanvasLayer" instance=ExtResource("1_6nlly")]
+
+[node name="IncorrectScreen" type="ColorRect" parent="CanvasLayer"]
+offset_right = 480.0
+offset_bottom = 480.0
+mouse_filter = 2
+color = Color(0.85098, 0.341176, 0.388235, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer"]
+libraries = {
+"": SubResource("AnimationLibrary_cqxig")
+}
+autoplay = "Default"
+script = ExtResource("4_dca1l")
+
+[node name="Confetti" parent="." instance=ExtResource("5_xmfcp")]
+position = Vector2(234, 433)
+
+[connection signal="incorrect" from="SumManager" to="CanvasLayer/AnimationPlayer" method="_on_sum_manager_incorrect"]
+[connection signal="numbers_hidden" from="SumManager" to="CanvasLayer/UI" method="_on_sum_manager_numbers_hidden"]
+[connection signal="parsed_equation" from="SumManager" to="CanvasLayer/UI" method="_on_sum_manager_parsed_equation"]
+[connection signal="set_title" from="SumManager" to="CanvasLayer/UI" method="_on_sum_manager_set_title"]
+[connection signal="win_game" from="SumManager" to="CanvasLayer/UI" method="_on_sum_manager_win_game"]
+[connection signal="win_game" from="SumManager" to="Confetti" method="_on_sum_manager_win_game"]
+[connection signal="try_answer" from="CanvasLayer/UI" to="SumManager" method="_on_ui_try_answer"]

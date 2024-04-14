@@ -1,0 +1,63 @@
+[gd_scene load_steps=7 format=3 uid="uid://cnlskodg2vkff"]
+
+[ext_resource type="Texture2D" uid="uid://cpfo720gadm7u" path="res://Sprites/Node.png" id="1_7418g"]
+[ext_resource type="Texture2D" uid="uid://pis0nkumsf5x" path="res://Sprites/NodeSelected.png" id="2_p26pw"]
+[ext_resource type="Script" path="res://Scripts/NumberNode.gd" id="2_t6pdv"]
+[ext_resource type="BitMap" uid="uid://2k11l58y8o27" path="res://Sprites/ButtonMask.png" id="3_g6h6n"]
+[ext_resource type="Texture2D" uid="uid://b6eya3g0ihtnq" path="res://Sprites/Slash.png" id="5_skpjo"]
+[ext_resource type="Texture2D" uid="uid://b6llsqr4pwy6l" path="res://Sprites/EquationNode.png" id="6_8f6ra"]
+
+[node name="Node" type="TextureButton"]
+offset_right = 26.0
+offset_bottom = 26.0
+toggle_mode = true
+action_mode = 0
+texture_normal = ExtResource("1_7418g")
+texture_click_mask = ExtResource("3_g6h6n")
+script = ExtResource("2_t6pdv")
+unselected_texture = ExtResource("1_7418g")
+selected_texture = ExtResource("2_p26pw")
+known_number_color = Color(0.133333, 0.137255, 0.137255, 1)
+guess_number_color = Color(0.2, 0.388235, 0.737255, 1)
+hint_number_color = Color(0.85098, 0.341176, 0.388235, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = -8
+alignment = 1
+
+[node name="Number1" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+stretch_mode = 2
+
+[node name="Number2" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+stretch_mode = 2
+
+[node name="Slash" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("5_skpjo")
+stretch_mode = 2
+
+[node name="InEquation" type="TextureRect" parent="."]
+visible = false
+z_index = -1
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("6_8f6ra")
+stretch_mode = 2
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

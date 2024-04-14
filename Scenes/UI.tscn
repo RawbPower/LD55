@@ -1,0 +1,418 @@
+[gd_scene load_steps=18 format=3 uid="uid://dv2xw6ojkrh7w"]
+
+[ext_resource type="Script" path="res://Scripts/UIManager.gd" id="1_m1ktd"]
+[ext_resource type="Script" path="res://Scripts/CircularContainer.gd" id="2_67f30"]
+[ext_resource type="PackedScene" uid="uid://cnlskodg2vkff" path="res://Scenes/NumberNode.tscn" id="3_gdo80"]
+[ext_resource type="PackedScene" uid="uid://ljkk4uw3q2yl" path="res://Scenes/Cursor.tscn" id="4_mb1x2"]
+[ext_resource type="FontFile" uid="uid://bxv2cextln77m" path="res://Fonts/ChevyRay - Oeuf.ttf" id="5_bpu4j"]
+[ext_resource type="PackedScene" uid="uid://bt78jh5gihlji" path="res://Scenes/NumberTexture.tscn" id="5_y0qjd"]
+[ext_resource type="Script" path="res://Scripts/WinScreen.gd" id="6_1lg02"]
+[ext_resource type="Texture2D" uid="uid://bsw5w8ajdsrdn" path="res://Sprites/WizardCheer.png" id="6_m5hf2"]
+[ext_resource type="Texture2D" uid="uid://c5hmcwx5limuq" path="res://Sprites/Digits16.png" id="7_da7f4"]
+[ext_resource type="Texture2D" uid="uid://ci1o7naarq3d5" path="res://Sprites/SpeechBubble.png" id="7_upjr6"]
+[ext_resource type="PackedScene" uid="uid://cll165b5o56hd" path="res://Scenes/level_timer.tscn" id="8_72rug"]
+[ext_resource type="Texture2D" uid="uid://d22c3wbl71dos" path="res://Sprites/Digits17.png" id="8_hgitw"]
+[ext_resource type="Texture2D" uid="uid://clg3j1mrr5vu5" path="res://Sprites/Digits12.png" id="9_dnvdn"]
+[ext_resource type="Script" path="res://Scripts/GameButton.gd" id="10_npous"]
+[ext_resource type="PackedScene" uid="uid://dcepqs1pmviyl" path="res://Scenes/HowTo.tscn" id="11_kgylj"]
+[ext_resource type="Texture2D" uid="uid://blvgs6t85v7ef" path="res://Sprites/Digits19.png" id="12_jbsfq"]
+[ext_resource type="Texture2D" uid="uid://nlkwiq8n7rpl" path="res://Sprites/HowToBorder.png" id="12_t45f3"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m1ktd")
+
+[node name="Nodes" type="Container" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -81.0
+offset_right = 78.355
+offset_bottom = 87.355
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_67f30")
+arrange/force_squares = false
+arrange/force_expand = false
+arrange/start_angle = 0.0
+arrange/start_empty = false
+arrange/allow_node2d = false
+animate/percent_visible = 1.0
+animate/all_at_once = false
+
+[node name="Node1" parent="Nodes" instance=ExtResource("3_gdo80")]
+layout_mode = 2
+number = "7"
+
+[node name="Node2" parent="Nodes" instance=ExtResource("3_gdo80")]
+layout_mode = 2
+number = "+"
+
+[node name="Node3" parent="Nodes" instance=ExtResource("3_gdo80")]
+layout_mode = 2
+number = "4"
+hide = true
+
+[node name="Node4" parent="Nodes" instance=ExtResource("3_gdo80")]
+layout_mode = 2
+number = "="
+
+[node name="Node5" parent="Nodes" instance=ExtResource("3_gdo80")]
+layout_mode = 2
+number = "11"
+
+[node name="Node6" parent="Nodes" instance=ExtResource("3_gdo80")]
+layout_mode = 2
+number = "-"
+hide = true
+
+[node name="Node7" parent="Nodes" instance=ExtResource("3_gdo80")]
+layout_mode = 2
+number = "3"
+hide = true
+
+[node name="Node8" parent="Nodes" instance=ExtResource("3_gdo80")]
+layout_mode = 2
+number = "="
+
+[node name="Node9" parent="Nodes" instance=ExtResource("3_gdo80")]
+layout_mode = 2
+number = "8"
+hide = true
+
+[node name="Node10" parent="Nodes" instance=ExtResource("3_gdo80")]
+layout_mode = 2
+number = "/"
+
+[node name="Node11" parent="Nodes" instance=ExtResource("3_gdo80")]
+layout_mode = 2
+number = "2"
+hide = true
+
+[node name="Node12" parent="Nodes" instance=ExtResource("3_gdo80")]
+layout_mode = 2
+number = "="
+
+[node name="NumbersToPlace" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -42.0
+offset_right = -1.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="Equations" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -51.0
+offset_top = -15.0
+offset_right = 37.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="Equation1" type="HBoxContainer" parent="Equations"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 22
+
+[node name="NumberTexture" parent="Equations/Equation1" instance=ExtResource("5_y0qjd")]
+layout_mode = 2
+
+[node name="NumberTexture2" parent="Equations/Equation1" instance=ExtResource("5_y0qjd")]
+layout_mode = 2
+
+[node name="NumberTexture3" parent="Equations/Equation1" instance=ExtResource("5_y0qjd")]
+layout_mode = 2
+
+[node name="NumberTexture4" parent="Equations/Equation1" instance=ExtResource("5_y0qjd")]
+layout_mode = 2
+
+[node name="NumberTexture5" parent="Equations/Equation1" instance=ExtResource("5_y0qjd")]
+layout_mode = 2
+
+[node name="Equation2" type="HBoxContainer" parent="Equations"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 22
+
+[node name="NumberTexture" parent="Equations/Equation2" instance=ExtResource("5_y0qjd")]
+layout_mode = 2
+
+[node name="NumberTexture2" parent="Equations/Equation2" instance=ExtResource("5_y0qjd")]
+layout_mode = 2
+
+[node name="NumberTexture3" parent="Equations/Equation2" instance=ExtResource("5_y0qjd")]
+layout_mode = 2
+
+[node name="NumberTexture4" parent="Equations/Equation2" instance=ExtResource("5_y0qjd")]
+layout_mode = 2
+
+[node name="NumberTexture5" parent="Equations/Equation2" instance=ExtResource("5_y0qjd")]
+layout_mode = 2
+
+[node name="Win" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -36.0
+offset_top = -42.0
+offset_right = 25.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.133333, 0.137255, 0.137255, 1)
+theme_override_fonts/font = ExtResource("5_bpu4j")
+theme_override_font_sizes/font_size = 13
+text = "You win!
+Time:
+Hints Used:"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("6_1lg02")
+
+[node name="Menu" type="Button" parent="Win"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -36.0
+offset_top = 43.5
+offset_right = 37.0
+offset_bottom = 65.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Menu"
+
+[node name="TextureRect" type="TextureRect" parent="Win"]
+visible = false
+layout_mode = 0
+offset_left = 99.0
+offset_top = 134.0
+offset_right = 339.0
+offset_bottom = 282.0
+texture = ExtResource("6_m5hf2")
+stretch_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Win/TextureRect"]
+layout_mode = 0
+offset_left = -70.0
+offset_top = -2.0
+offset_right = 94.0
+offset_bottom = 114.0
+texture = ExtResource("7_upjr6")
+stretch_mode = 2
+
+[node name="Label" type="Label" parent="Win/TextureRect/TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -73.0
+offset_top = -21.0
+offset_right = 59.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Wow! You have
+summoned great 
+courage... Get it?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Help" type="TextureButton" parent="."]
+modulate = Color(0.133333, 0.137255, 0.137255, 1)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -41.0
+offset_top = 26.0
+offset_right = -25.0
+offset_bottom = 42.0
+grow_horizontal = 0
+texture_normal = ExtResource("7_da7f4")
+script = ExtResource("10_npous")
+known_number_color = Color(0.133333, 0.137255, 0.137255, 1)
+guess_number_color = Color(0.2, 0.388235, 0.737255, 1)
+
+[node name="Reset" type="TextureButton" parent="."]
+modulate = Color(0.133333, 0.137255, 0.137255, 1)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -74.0
+offset_top = 26.0
+offset_right = -58.0
+offset_bottom = 42.0
+grow_horizontal = 0
+texture_normal = ExtResource("8_hgitw")
+script = ExtResource("10_npous")
+known_number_color = Color(0.133333, 0.137255, 0.137255, 1)
+guess_number_color = Color(0.2, 0.388235, 0.737255, 1)
+
+[node name="Hint" type="TextureButton" parent="."]
+modulate = Color(0.133333, 0.137255, 0.137255, 1)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -58.0
+offset_top = 26.0
+offset_right = -42.0
+offset_bottom = 42.0
+grow_horizontal = 0
+texture_normal = ExtResource("12_jbsfq")
+script = ExtResource("10_npous")
+known_number_color = Color(0.133333, 0.137255, 0.137255, 1)
+guess_number_color = Color(0.2, 0.388235, 0.737255, 1)
+
+[node name="Exit" type="TextureButton" parent="."]
+modulate = Color(0.133333, 0.137255, 0.137255, 1)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -25.0
+offset_top = 26.0
+offset_right = -9.0
+offset_bottom = 42.0
+grow_horizontal = 0
+texture_normal = ExtResource("9_dnvdn")
+script = ExtResource("10_npous")
+known_number_color = Color(0.133333, 0.137255, 0.137255, 1)
+guess_number_color = Color(0.2, 0.388235, 0.737255, 1)
+
+[node name="LevelTimer" parent="." instance=ExtResource("8_72rug")]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 26.0
+offset_right = 56.0
+offset_bottom = 40.0
+
+[node name="Daily" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = 21.0
+offset_right = 20.0
+offset_bottom = 34.0
+grow_horizontal = 2
+text = "Daily Puzzle"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Date" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -43.0
+offset_top = 42.0
+offset_right = 44.0
+offset_bottom = 55.0
+grow_horizontal = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HowToMenu" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.0
+offset_top = -172.0
+offset_right = 180.0
+offset_bottom = 188.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_t45f3")
+
+[node name="HowTo" parent="HowToMenu" instance=ExtResource("11_kgylj")]
+layout_mode = 1
+offset_left = -180.0
+offset_top = -180.0
+offset_right = 180.0
+offset_bottom = 180.0
+
+[node name="HintOverlay" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 480.0
+offset_bottom = 480.0
+mouse_filter = 2
+color = Color(0.133333, 0.137255, 0.137255, 0.427451)
+
+[node name="Label" type="Label" parent="HintOverlay"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 67.0
+offset_top = 48.0
+offset_right = 234.0
+offset_bottom = 77.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.85098, 0.341176, 0.388235, 1)
+text = "Hint Active!
+Choose square to get answer"
+horizontal_alignment = 1
+
+[node name="Cursor" parent="." instance=ExtResource("4_mb1x2")]
+offset_left = -362.604
+offset_top = 672.768
+offset_right = -362.604
+offset_bottom = 672.768
+
+[connection signal="hint_disabled" from="." to="Cursor" method="disable_hint_cursor"]
+[connection signal="hint_enabled" from="." to="Cursor" method="enable_hint_cursor"]
+[connection signal="pressed" from="Win/Menu" to="." method="_on_menu_pressed"]
+[connection signal="mouse_entered" from="Help" to="Help" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Help" to="Help" method="_on_mouse_exited"]
+[connection signal="pressed" from="Help" to="." method="_on_help_pressed"]
+[connection signal="mouse_entered" from="Reset" to="Reset" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Reset" to="Reset" method="_on_mouse_exited"]
+[connection signal="pressed" from="Reset" to="." method="_on_reset_pressed"]
+[connection signal="mouse_entered" from="Hint" to="." method="_on_hint_mouse_entered"]
+[connection signal="mouse_entered" from="Hint" to="Hint" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Hint" to="." method="_on_hint_mouse_exited"]
+[connection signal="mouse_exited" from="Hint" to="Hint" method="_on_mouse_exited"]
+[connection signal="pressed" from="Hint" to="." method="_on_hint_pressed"]
+[connection signal="mouse_entered" from="Exit" to="Exit" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Exit" to="Exit" method="_on_mouse_exited"]
+[connection signal="pressed" from="Exit" to="Exit" method="_on_exit_pressed"]

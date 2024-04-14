@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PuzzleData" load_steps=2 format=3 uid="uid://8nx5qc1ins3m"]
+
+[ext_resource type="Script" path="res://Scripts/PuzzleData.gd" id="1_kahrn"]
+
+[resource]
+script = ExtResource("1_kahrn")
+name = "Novice"
+num_equations = 6
+max_number = 50
+nodes_shown = 6
+operations = ["+", "-", "*", "/"]

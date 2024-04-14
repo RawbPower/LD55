@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5jxfcaqcge1d"]
+
+[ext_resource type="Texture2D" uid="uid://c840yvv8h1en6" path="res://Sprites/IntroScreen.png" id="1_d1cfs"]
+[ext_resource type="PackedScene" uid="uid://dcepqs1pmviyl" path="res://Scenes/HowTo.tscn" id="2_wbemh"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -1.0
+offset_right = 479.0
+offset_bottom = 480.0
+texture = ExtResource("1_d1cfs")
+stretch_mode = 2
+
+[node name="HowTo" parent="." instance=ExtResource("2_wbemh")]
+layout_mode = 1
+offset_left = -216.0
+offset_top = -234.0
+offset_right = 144.0
+offset_bottom = 126.0
+
+[node name="Label2" parent="HowTo" index="3"]
+text = "- Use      to reset your guesses
+
+- Use      to toggle how to menu
+
+- Use      to go to the main menu"
+
+[node name="TextureRect5" parent="HowTo" index="7"]
+visible = false
+
+[node name="TextureRect6" parent="HowTo" index="8"]
+visible = false
+
+[editable path="HowTo"]

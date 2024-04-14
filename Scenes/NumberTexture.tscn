@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://bt78jh5gihlji"]
+
+[ext_resource type="Texture2D" uid="uid://dxv8xwes7np4e" path="res://Sprites/Digits4.png" id="1_376ma"]
+[ext_resource type="Script" path="res://Scripts/NumberTexture.gd" id="1_h5q3s"]
+
+[node name="NumberTexture" type="Control"]
+modulate = Color(0.133333, 0.137255, 0.137255, 1)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -302.0
+offset_bottom = -305.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h5q3s")
+known_number_color = Color(0.133333, 0.137255, 0.137255, 1)
+guess_number_color = Color(0.2, 0.388235, 0.737255, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -8.0
+offset_right = 12.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = -8
+alignment = 1
+
+[node name="Number1" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_376ma")
+stretch_mode = 2
+
+[node name="Number2" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_376ma")
+stretch_mode = 2

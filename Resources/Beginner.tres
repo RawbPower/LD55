@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PuzzleData" load_steps=2 format=3 uid="uid://cjqby8lar00c6"]
+
+[ext_resource type="Script" path="res://Scripts/PuzzleData.gd" id="1_ewyeg"]
+
+[resource]
+script = ExtResource("1_ewyeg")
+name = "Beginner"
+num_equations = 4
+max_number = 15
+nodes_shown = 6
+operations = ["+", "-"]

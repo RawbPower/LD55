@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PuzzleData" load_steps=2 format=3 uid="uid://bo6lsmxpd7gk5"]
+
+[ext_resource type="Script" path="res://Scripts/PuzzleData.gd" id="1_wwepf"]
+
+[resource]
+script = ExtResource("1_wwepf")
+name = "Expert"
+num_equations = 7
+max_number = 99
+nodes_shown = 6
+operations = ["+", "-", "*", "/", "%"]

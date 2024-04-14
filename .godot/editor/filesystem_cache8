@@ -1,0 +1,160 @@
+fc8a56933c4b1c8d796fdb8f7a9f9475
+::res://::1713134671
+Background.png::CompressedTexture2D::9033636188050957032::1712997520::1712997523::1::::<><>::
+Cover.png::CompressedTexture2D::8270386468153993877::1713132977::1713133006::1::::<><>::
+default_theme.tres::Theme::8440696952500882102::1713030566::0::1::::<><>::uid://bxv2cextln77m::::res://Fonts/ChevyRay - Oeuf.ttf<>uid://d3l8me0fwfim6::::res://light_9slice.tres<>uid://c27k1t1e5sg1w::::res://selected_9slice.tres
+export_presets.cfg::TextFile::-1::1713134671::0::1::::<><>::
+icon.svg::CompressedTexture2D::1432820438617022017::1712995392::1712995396::1::::<><>::
+light_9slice.tres::StyleBoxTexture::9149283167497313215::1713029522::0::1::::<><>::uid://ji13a1ke3cxo::::res://UI_Light_9slice.png
+GlobalAudioStreamPlayer.gd::GDScript::-1::1713114756::0::1::::<>AudioStreamPlayer<>::
+GlobalAudioStreamPlayer.tscn::PackedScene::428860242256313865::1713134652::0::1::::<><>::res://GlobalAudioStreamPlayer.gd
+Screenshot1.png::CompressedTexture2D::8106914941222517808::1713133905::1713134011::1::::<><>::
+Screenshot2.png::CompressedTexture2D::7972357613289752134::1713133162::1713134011::1::::<><>::
+Screenshot3.png::CompressedTexture2D::2716469425801128330::1713133915::1713134011::1::::<><>::
+Screenshot4.png::CompressedTexture2D::28189300409270701::1713133220::1713134011::1::::<><>::
+Screenshot5.png::CompressedTexture2D::5482172838956441976::1713133937::1713134011::1::::<><>::
+Screenshot6.png::CompressedTexture2D::7500296517124398408::1713133945::1713134011::1::::<><>::
+selected_9slice.tres::StyleBoxTexture::6734654872643295890::1713030549::0::1::::<><>::uid://dqbn8ijcbkey4::::res://UI_Select_9slice.png
+UI_Light_9slice.png::CompressedTexture2D::649843299441752836::1713028594::1713028807::1::::<><>::
+UI_Select_9slice.png::CompressedTexture2D::8285196613329353277::1713030523::1713030530::1::::<><>::
+::res://Builds/::1713052447
+::res://Builds/Web/::1713134711
+index.apple-touch-icon.png::CompressedTexture2D::1219119234441300738::1713134671::1713134724::1::::<><>::
+index.icon.png::CompressedTexture2D::7744344293553343655::1713134671::1713134724::1::::<><>::
+index.png::CompressedTexture2D::6011473865090775944::1713134671::1713134724::1::::<><>::
+::res://Builds/Windows/::1713134694
+::res://Fonts/::1713015024
+ChevyRay - Babyblocks Mono.ttf::FontFile::4203766951646554844::1663595497::1713015024::1::::<><>::
+ChevyRay - Babyblocks.ttf::FontFile::2888467610896035378::1663595498::1713015024::1::::<><>::
+ChevyRay - Bird Seed.ttf::FontFile::1306023977379240662::1663595498::1713015024::1::::<><>::
+ChevyRay - Bubble Time.ttf::FontFile::5250339239138764306::1663595498::1713015024::1::::<><>::
+ChevyRay - Chocolate Mono.ttf::FontFile::8041721105150815126::1663595498::1713015024::1::::<><>::
+ChevyRay - Chocolate.ttf::FontFile::5373657882787324755::1663595498::1713015024::1::::<><>::
+ChevyRay - Classified.ttf::FontFile::5415074133262273728::1663595498::1713015024::1::::<><>::
+ChevyRay - Column.ttf::FontFile::4934144950485066774::1663595498::1713015024::1::::<><>::
+ChevyRay - Crates.ttf::FontFile::1318945494373308060::1663595507::1713015024::1::::<><>::
+ChevyRay - Curse.ttf::FontFile::1705197822956378371::1663595497::1713015024::1::::<><>::
+ChevyRay - Express Mono.ttf::FontFile::6956781899416487662::1663595497::1713015024::1::::<><>::
+ChevyRay - Express.ttf::FontFile::5631652652633078913::1663595498::1713015024::1::::<><>::
+ChevyRay - Headline.ttf::FontFile::7255423375580221181::1663595507::1713015024::1::::<><>::
+ChevyRay - Lantern.ttf::FontFile::4891734282177550696::1663595498::1713015024::1::::<><>::
+ChevyRay - Lazytown Mono.ttf::FontFile::3833400841005196982::1663595498::1713015024::1::::<><>::
+ChevyRay - Lazytown.ttf::FontFile::2409135236891178368::1663595498::1713015024::1::::<><>::
+ChevyRay - Little League Mono.ttf::FontFile::3947306805467102349::1663595498::1713015024::1::::<><>::
+ChevyRay - Little League.ttf::FontFile::270964935048475128::1663595498::1713015024::1::::<><>::
+ChevyRay - Love Bug.ttf::FontFile::1861351321616282562::1663595498::1713015024::1::::<><>::
+ChevyRay - Magic Book.ttf::FontFile::8937235433733401566::1663595498::1713015024::1::::<><>::
+ChevyRay - Oeuf.ttf::FontFile::4045759197098029444::1663595507::1713015024::1::::<><>::
+ChevyRay - Picory.ttf::FontFile::4503711410883750122::1663595498::1713015024::1::::<><>::
+ChevyRay - Pinch Mono.ttf::FontFile::2341655302222911779::1663595498::1713015024::1::::<><>::
+ChevyRay - Pinch.ttf::FontFile::4057757699804826729::1663595498::1713015024::1::::<><>::
+ChevyRay - Rise.ttf::FontFile::3088788389115763648::1663595498::1713015024::1::::<><>::
+ChevyRay - Roundabout.ttf::FontFile::1755517719243150786::1663595498::1713015024::1::::<><>::
+ChevyRay - Skullboy Mono.ttf::FontFile::7756483606468037440::1663595498::1713015024::1::::<><>::
+ChevyRay - Skullboy.ttf::FontFile::8480883458996457912::1663595498::1713015024::1::::<><>::
+ChevyRay - Slapface.ttf::FontFile::2070313392658505993::1663595507::1713015024::1::::<><>::
+ChevyRay - Softsquare Mono.ttf::FontFile::7706009036574602412::1663595498::1713015024::1::::<><>::
+ChevyRay - Softsquare Wide.ttf::FontFile::458752671284147478::1663595498::1713015024::1::::<><>::
+ChevyRay - Softsquare.ttf::FontFile::4161814821582686173::1663595498::1713015024::1::::<><>::
+ChevyRay - Space Loot.ttf::FontFile::7527550582487490579::1663595507::1713015024::1::::<><>::
+ChevyRay - Stapler.ttf::FontFile::5256293429260715305::1663595498::1713015024::1::::<><>::
+ChevyRay - Tentown.ttf::FontFile::2554379773186321154::1663595498::1713015024::1::::<><>::
+ChevyRay - Thicket Mono.ttf::FontFile::7093669799922996961::1663595498::1713015024::1::::<><>::
+ChevyRay - Thicket.ttf::FontFile::6623954237946658228::1663595497::1713015024::1::::<><>::
+ChevyRay - Thinstix.ttf::FontFile::5219924834407527941::1663595498::1713015024::1::::<><>::
+ChevyRay - Vector Mono.ttf::FontFile::4006892356316594659::1663595498::1713015024::1::::<><>::
+ChevyRay - Vector.ttf::FontFile::8843723507319424783::1663595497::1713015024::1::::<><>::
+::res://Resources/::1713110989
+Beginner.tres::Resource/PuzzleData::5437676330527066591::1713110989::0::1::::<><>::res://Scripts/PuzzleData.gd
+Expert.tres::Resource/PuzzleData::3433760902709635418::1713110989::0::1::::<><>::res://Scripts/PuzzleData.gd
+Novice.tres::Resource/PuzzleData::2344519660164376884::1713110989::0::1::::<><>::res://Scripts/PuzzleData.gd
+::res://Scenes/::1713134652
+ClickSoundEffect.tscn::PackedScene::5451787256359846198::1713134651::0::1::::<><>::res://Scripts/OneTimeSoundEffect.gd<>uid://h82qcphes2nt::::res://Sounds/Click.wav
+Cursor.tscn::PackedScene::791283262782507943::1713134651::0::1::::<><>::res://Scripts/Cursor.gd<>uid://plvhkmgfnuuj::::res://Sprites/Cursor.png<>uid://jlyiqgx58tba::::res://Sprites/CursorHint.png
+DailyPuzzleMenu.tscn::PackedScene::8954006527615068572::1713134651::0::1::::<><>::res://Scripts/DailyPuzzleMenu.gd<>uid://clg3j1mrr5vu5::::res://Sprites/Digits12.png<>res://Scripts/GameButton.gd<>uid://ljkk4uw3q2yl::::res://Scenes/Cursor.tscn
+Game.tscn::PackedScene::2180545440623175929::1713134651::0::1::::<><>::uid://dv2xw6ojkrh7w::::res://Scenes/UI.tscn<>uid://d1x7wyont7yyi::::res://Background.png<>res://Scripts/SumManager.gd<>res://Scripts/IncorrectAnimation.gd<>uid://drlqq0yj2rnu8::::res://Scenes/Confetti.tscn
+GameData.tscn::PackedScene::2358944007087496930::1713134651::0::1::::<><>::res://Scripts/GameData.gd
+HowTo.tscn::PackedScene::7308837563249202595::1713134651::0::1::::<><>::uid://qhdrmrtes3w0::::res://Sprites/HowToExample.png<>uid://d22c3wbl71dos::::res://Sprites/Digits17.png<>uid://clg3j1mrr5vu5::::res://Sprites/Digits12.png<>uid://c5hmcwx5limuq::::res://Sprites/Digits16.png<>uid://c78le3scpuqgb::::res://Sprites/Digits18.png<>uid://blvgs6t85v7ef::::res://Sprites/Digits19.png
+HowToScreen.tscn::PackedScene::3306750021365838526::1713134651::0::1::::<><>::uid://dcepqs1pmviyl::::res://Scenes/HowTo.tscn<>uid://clg3j1mrr5vu5::::res://Sprites/Digits12.png<>res://Scripts/GameButton.gd<>uid://ljkk4uw3q2yl::::res://Scenes/Cursor.tscn
+IntroHowToScreen.tscn::PackedScene::4512070918200344791::1713134651::0::1::::<><>::uid://c840yvv8h1en6::::res://Sprites/IntroScreen.png<>uid://dcepqs1pmviyl::::res://Scenes/HowTo.tscn
+IntroScreen.tscn::PackedScene::8775643324856698243::1713134651::0::1::::<><>::uid://c840yvv8h1en6::::res://Sprites/IntroScreen.png<>res://Scripts/IntroScreen.gd<>uid://ljkk4uw3q2yl::::res://Scenes/Cursor.tscn
+LevelTransition.tscn::PackedScene::1693653287221806880::1713134651::0::1::::<><>::res://Scripts/LevelTransition.gd
+level_timer.tscn::PackedScene::5569262382750491069::1713134651::0::1::::<><>::res://Scripts/LevelTimer.gd
+NumberNode.tscn::PackedScene::5709115994054971951::1713134651::0::1::::<><>::uid://cpfo720gadm7u::::res://Sprites/Node.png<>uid://pis0nkumsf5x::::res://Sprites/NodeSelected.png<>res://Scripts/NumberNode.gd<>uid://2k11l58y8o27::::res://Sprites/ButtonMask.png<>uid://b6eya3g0ihtnq::::res://Sprites/Slash.png<>uid://b6llsqr4pwy6l::::res://Sprites/EquationNode.png
+NumberTexture.tscn::PackedScene::3788088948143241438::1713134651::0::1::::<><>::uid://dxv8xwes7np4e::::res://Sprites/Digits4.png<>res://Scripts/NumberTexture.gd
+PuzzlebookMenu.tscn::PackedScene::3839311278053234110::1713134651::0::1::::<><>::res://Scripts/PuzzlebookMenu.gd<>uid://clg3j1mrr5vu5::::res://Sprites/Digits12.png<>res://Scripts/GameButton.gd<>uid://ljkk4uw3q2yl::::res://Scenes/Cursor.tscn
+Confetti.tscn::PackedScene::8376181943411996373::1713134652::0::1::::<><>::res://Scripts/Confetti.gd
+StartMenu.tscn::PackedScene::4639238005693382269::1713134651::0::1::::<><>::res://Scripts/StartMenu.gd<>uid://d0tngdjysqc6w::::res://Scenes/DailyPuzzleMenu.tscn<>uid://ljkk4uw3q2yl::::res://Scenes/Cursor.tscn<>uid://bux15ptjmn4fy::::res://Scenes/PuzzlebookMenu.tscn<>uid://bs4u7kuimf2s5::::res://Sprites/Arrow.png
+TapSoundEffect.tscn::PackedScene::770857116390877465::1713134651::0::1::::<><>::uid://rnehs41rlboi::::res://Sounds/Tap.wav<>res://Scripts/OneTimeSoundEffect.gd
+UI.tscn::PackedScene::8690403395411209402::1713134651::0::1::::<><>::res://Scripts/UIManager.gd<>res://Scripts/CircularContainer.gd<>uid://cnlskodg2vkff::::res://Scenes/NumberNode.tscn<>uid://ljkk4uw3q2yl::::res://Scenes/Cursor.tscn<>uid://bxv2cextln77m::::res://Fonts/ChevyRay - Oeuf.ttf<>uid://bt78jh5gihlji::::res://Scenes/NumberTexture.tscn<>res://Scripts/WinScreen.gd<>uid://bsw5w8ajdsrdn::::res://Sprites/WizardCheer.png<>uid://c5hmcwx5limuq::::res://Sprites/Digits16.png<>uid://ci1o7naarq3d5::::res://Sprites/SpeechBubble.png<>uid://cll165b5o56hd::::res://Scenes/level_timer.tscn<>uid://d22c3wbl71dos::::res://Sprites/Digits17.png<>uid://clg3j1mrr5vu5::::res://Sprites/Digits12.png<>res://Scripts/GameButton.gd<>uid://dcepqs1pmviyl::::res://Scenes/HowTo.tscn<>uid://blvgs6t85v7ef::::res://Sprites/Digits19.png<>uid://nlkwiq8n7rpl::::res://Sprites/HowToBorder.png
+::res://Scripts/::1713134581
+CircularContainer.gd::GDScript::-1::1713092053::0::1::::<>Container<>::
+Cursor.gd::GDScript::-1::1713117350::0::1::::Cursor<>Control<>::
+DailyPuzzleMenu.gd::GDScript::-1::1713114192::0::1::::<>CanvasLayer<>::
+GameButton.gd::GDScript::-1::1713128116::0::1::::<>TextureButton<>::
+GameData.gd::GDScript::-1::1713098772::0::1::::GameData<>Node<>::
+IntroScreen.gd::GDScript::-1::1713114179::0::1::::<>Control<>::
+LevelTimer.gd::GDScript::-1::1713099985::0::1::::LevelTimer<>Label<>::
+LevelTransition.gd::GDScript::-1::1708992788::0::1::::<>CanvasLayer<>::
+NumberNode.gd::GDScript::-1::1713118877::0::1::::<>TextureButton<>::
+Numbers.gd::GDScript::-1::1713083877::0::1::::<>Node<>::
+NumberTexture.gd::GDScript::-1::1713020407::0::1::::<>Control<>::
+OneTimeSoundEffect.gd::GDScript::-1::1713112882::0::1::::<>AudioStreamPlayer<>::
+PuzzlebookMenu.gd::GDScript::-1::1713114156::0::1::::<>CanvasLayer<>::
+PuzzleData.gd::GDScript::-1::1713082829::0::1::::PuzzleData<>Resource<>::
+IncorrectAnimation.gd::GDScript::-1::1713115263::0::1::::<>AnimationPlayer<>::
+Confetti.gd::GDScript::-1::1713122989::0::1::::<>CPUParticles2D<>::
+StartMenu.gd::GDScript::-1::1713114048::0::1::::<>CanvasLayer<>::
+SumManager.gd::GDScript::-1::1713133103::0::1::::<>Node2D<>::
+UIManager.gd::GDScript::-1::1713134581::0::1::::<>Control<>::
+WinScreen.gd::GDScript::-1::1713131911::0::1::::<>Label<>::
+::res://Sounds/::1713114729
+Click.wav::AudioStreamWAV::561114431400271145::1713113216::1713113217::1::::<><>::
+Incorrect.wav::AudioStreamWAV::5360887583968626569::1713114726::1713114729::1::::<><>::
+Pop1.wav::AudioStreamWAV::6612501198078186539::1682772745::1713110675::1::::<><>::
+Pop2.wav::AudioStreamWAV::3816368212206564466::1682772769::1713110675::1::::<><>::
+Pop3.wav::AudioStreamWAV::1787201799684730901::1682772784::1713110675::1::::<><>::
+Pop4.wav::AudioStreamWAV::4477538391004774854::1682772796::1713110675::1::::<><>::
+Pop5.wav::AudioStreamWAV::7675628463315848375::1682772815::1713110675::1::::<><>::
+Pop6.wav::AudioStreamWAV::8359449774893719921::1682772841::1713110675::1::::<><>::
+Success.wav::AudioStreamWAV::3330279118833786382::1713114452::1713114454::1::::<><>::
+Tap.mp3::AudioStreamMP3::7425130838274429214::1713111682::1713111760::1::::<><>::
+Tap.wav::AudioStreamWAV::1220303612601831120::1713113204::1713113217::1::::<><>::
+::res://Sprites/::1713128569
+Arrow.png::CompressedTexture2D::3710958865815040982::1713128568::1713128569::1::::<><>::
+Background.png::CompressedTexture2D::245343814570638383::1712997548::1713009805::1::::<><>::
+ButtonMask.png::BitMap::1917368253854666774::1713009686::1713009814::1::::<><>::
+Cursor.png::CompressedTexture2D::1076828911321556729::1712998726::1713009805::1::::<><>::
+CursorHint-export.png::CompressedTexture2D::7674632964131396236::1713116895::1713116902::1::::<><>::
+CursorHint.png::CompressedTexture2D::655880092943435958::1713116989::1713116990::1::::<><>::
+Digits0.png::CompressedTexture2D::2286584791696306914::1713116270::1713012054::1::::<><>::
+Digits1.png::CompressedTexture2D::3418981373433660094::1713116270::1713012054::1::::<><>::
+Digits2.png::CompressedTexture2D::4247594927321748910::1713116270::1713012054::1::::<><>::
+Digits3.png::CompressedTexture2D::1608555957352508190::1713116270::1713012054::1::::<><>::
+Digits4.png::CompressedTexture2D::8819003284164459714::1713116270::1713012054::1::::<><>::
+Digits5.png::CompressedTexture2D::5700355783617050719::1713116270::1713012054::1::::<><>::
+Digits6.png::CompressedTexture2D::1576079921580741035::1713116270::1713012054::1::::<><>::
+Digits7.png::CompressedTexture2D::6277273207923876595::1713116270::1713012054::1::::<><>::
+Digits8.png::CompressedTexture2D::5044879382173164648::1713116270::1713012054::1::::<><>::
+Digits9.png::CompressedTexture2D::3895077507747691593::1713116270::1713012054::1::::<><>::
+Digits10.png::CompressedTexture2D::7938307863807896554::1713116270::1713012054::1::::<><>::
+Digits11.png::CompressedTexture2D::8956991232088644168::1713116270::1713012054::1::::<><>::
+Digits12.png::CompressedTexture2D::5559022446812602810::1713116271::1713012054::1::::<><>::
+Digits13.png::CompressedTexture2D::4274475863053008088::1713116271::1713012054::1::::<><>::
+Digits14.png::CompressedTexture2D::1213852909557874020::1713116271::1713012054::1::::<><>::
+Digits15.png::CompressedTexture2D::2697611292144372833::1713116271::1713018121::1::::<><>::
+Digits16.png::CompressedTexture2D::6893690688728895576::1713116271::1713031196::1::::<><>::
+Digits17.png::CompressedTexture2D::9110271622482747370::1713116271::1713047882::1::::<><>::
+Digits18.png::CompressedTexture2D::7087685358355265885::1713116271::1713083994::1::::<><>::
+Digits19.png::CompressedTexture2D::3202248001909059445::1713116271::1713116274::1::::<><>::
+EquationNode.png::CompressedTexture2D::4585683890951324937::1713109840::1713109843::1::::<><>::
+HowToBorder.png::CompressedTexture2D::935810026404341949::1713050574::1713050577::1::::<><>::
+HowToExample.png::CompressedTexture2D::1137685309372855013::1713125629::1713125632::1::::<><>::
+IntroScreen.png::CompressedTexture2D::7150502083122879497::1713127728::1713127729::1::::<><>::
+Node.png::CompressedTexture2D::5836904551053983644::1713092347::1713092348::1::::<><>::
+NodeCollection.png::CompressedTexture2D::3524413881716679971::1713022260::1713022266::1::::<><>::
+NodeSelected.png::CompressedTexture2D::1070485926497437559::1713008671::1713009805::1::::<><>::
+Particle.png::CompressedTexture2D::6071798080871996426::1713121844::1713121846::1::::<><>::
+Slash.png::CompressedTexture2D::4571991036384243566::1713013586::1713013593::1::::<><>::
+SpeechBubble.png::CompressedTexture2D::5388933804226633476::1713106620::1713106622::1::::<><>::
+WizardCheer.png::CompressedTexture2D::3697098710700110487::1713105279::1713105280::1::::<><>::

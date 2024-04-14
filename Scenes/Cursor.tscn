@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://ljkk4uw3q2yl"]
+
+[ext_resource type="Script" path="res://Scripts/Cursor.gd" id="1_ki3co"]
+[ext_resource type="Texture2D" uid="uid://plvhkmgfnuuj" path="res://Sprites/Cursor.png" id="2_v4to8"]
+[ext_resource type="Texture2D" uid="uid://jlyiqgx58tba" path="res://Sprites/CursorHint.png" id="3_y2prb"]
+
+[node name="Cursor" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 0
+offset_left = 279.0
+offset_top = 119.0
+offset_right = 279.0
+offset_bottom = 119.0
+mouse_filter = 2
+script = ExtResource("1_ki3co")
+
+[node name="Image" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource("2_v4to8")
+stretch_mode = 2
+
+[node name="HintImage" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource("3_y2prb")
+stretch_mode = 2

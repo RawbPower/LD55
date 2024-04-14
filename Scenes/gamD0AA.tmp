@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=3 uid="uid://dv2xw6ojkrh7w"]
+
+[ext_resource type="Texture2D" uid="uid://dq31n7ue615t" path="res://Sprites/Background.png" id="1_twair"]
+[ext_resource type="Script" path="res://Scenes/CircularContainer.gd" id="2_17x0l"]
+[ext_resource type="PackedScene" uid="uid://ljkk4uw3q2yl" path="res://Scenes/Cursor.tscn" id="2_faf8r"]
+[ext_resource type="Texture2D" uid="uid://cpfo720gadm7u" path="res://Sprites/Node.png" id="3_jd0pc"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_twair")
+
+[node name="Nodes" type="Container" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_17x0l")
+
+[node name="Node1" type="TextureRect" parent="Nodes"]
+layout_mode = 2
+texture = ExtResource("3_jd0pc")
+stretch_mode = 2
+
+[node name="Node2" type="TextureRect" parent="Nodes"]
+layout_mode = 2
+texture = ExtResource("3_jd0pc")
+stretch_mode = 2
+
+[node name="Node3" type="TextureRect" parent="Nodes"]
+layout_mode = 2
+texture = ExtResource("3_jd0pc")
+stretch_mode = 2
+
+[node name="Node4" type="TextureRect" parent="Nodes"]
+layout_mode = 2
+texture = ExtResource("3_jd0pc")
+stretch_mode = 2
+
+[node name="Node5" type="TextureRect" parent="Nodes"]
+layout_mode = 2
+texture = ExtResource("3_jd0pc")
+stretch_mode = 2
+
+[node name="Cursor" parent="." instance=ExtResource("2_faf8r")]
+offset_left = -342.0
+offset_top = 538.0
+offset_right = -342.0
+offset_bottom = 538.0

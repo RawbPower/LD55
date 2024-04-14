@@ -1,0 +1,103 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxa8tfk1ijddj"]
+
+[ext_resource type="Texture2D" uid="uid://c840yvv8h1en6" path="res://Sprites/IntroScreen.png" id="1_gcw80"]
+[ext_resource type="Script" path="res://Scripts/IntroScreen.gd" id="1_rii2a"]
+[ext_resource type="PackedScene" uid="uid://ljkk4uw3q2yl" path="res://Scenes/Cursor.tscn" id="3_4ffao"]
+
+[node name="IntroScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rii2a")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_gcw80")
+stretch_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 39.0
+offset_top = 27.0
+offset_right = -57.0
+offset_bottom = -64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 31
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "\"Hello young apprentice wizards!\""
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "\"Now I know you are all excited to get started learning about
+summoning circles, right?\""
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Label3" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "\"Well before we do any of that sort of wishy washy magic, we 
+have to start with the foundations!\""
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Label4" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "\"And the foundation of any good arcane technique is...\""
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Label5" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "\"MATHEMATHICS! Of course!\""
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Label6" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "\"Every wizard needs a strong grasp of
+basic circular arithmetic.\""
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Label7" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "\"So let's get started...\""
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -63.0
+offset_top = -38.0
+offset_right = 64.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Left click to continue
+Esc to skip"
+horizontal_alignment = 1
+
+[node name="Cursor" parent="." instance=ExtResource("3_4ffao")]
+offset_left = 90.1426
+offset_top = 557.237
+offset_right = 90.1426
+offset_bottom = 557.237

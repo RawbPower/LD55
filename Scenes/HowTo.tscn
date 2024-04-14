@@ -1,0 +1,148 @@
+[gd_scene load_steps=7 format=3 uid="uid://dcepqs1pmviyl"]
+
+[ext_resource type="Texture2D" uid="uid://qhdrmrtes3w0" path="res://Sprites/HowToExample.png" id="2_ydqxy"]
+[ext_resource type="Texture2D" uid="uid://d22c3wbl71dos" path="res://Sprites/Digits17.png" id="3_5qhe3"]
+[ext_resource type="Texture2D" uid="uid://clg3j1mrr5vu5" path="res://Sprites/Digits12.png" id="4_3b0if"]
+[ext_resource type="Texture2D" uid="uid://c5hmcwx5limuq" path="res://Sprites/Digits16.png" id="5_d5vt5"]
+[ext_resource type="Texture2D" uid="uid://c78le3scpuqgb" path="res://Sprites/Digits18.png" id="5_lctdo"]
+[ext_resource type="Texture2D" uid="uid://blvgs6t85v7ef" path="res://Sprites/Digits19.png" id="5_sk3uh"]
+
+[node name="HowTo" type="Control"]
+custom_minimum_size = Vector2(360, 360)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -38.0
+offset_top = 11.0
+offset_right = 38.0
+offset_bottom = 37.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 26
+text = "How to Play"
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 33.0
+offset_bottom = -198.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "
+- To win you must satisfy all the equations in the circle
+
+- Equations go in a clockwise direction
+
+- An equation is satisfied when the sum on the right 
+side of an equals sign equals the first number in the sum on 
+the left of the equals sign"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 176.0
+offset_right = 190.0
+offset_bottom = 356.0
+texture = ExtResource("2_ydqxy")
+stretch_mode = 2
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 170.0
+offset_top = 167.0
+offset_right = -14.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "- Use      to reset your guesses
+- Use      to reveal a number
+- Use      to toggle how to menu
+- Use      to go to the main menu
+
+        - Double click to remove
+           guessed number
+
+       -       is the modulo operator
+       it gives the remainder of 
+       division (eg. 12      5 = 2)"
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+modulate = Color(0.133333, 0.137255, 0.137255, 1)
+layout_mode = 0
+offset_left = 199.0
+offset_top = 164.0
+offset_right = 215.0
+offset_bottom = 180.0
+texture = ExtResource("3_5qhe3")
+stretch_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+modulate = Color(0.133333, 0.137255, 0.137255, 1)
+layout_mode = 0
+offset_left = 199.0
+offset_top = 212.0
+offset_right = 215.0
+offset_bottom = 228.0
+texture = ExtResource("4_3b0if")
+stretch_mode = 2
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+modulate = Color(0.133333, 0.137255, 0.137255, 1)
+layout_mode = 0
+offset_left = 199.0
+offset_top = 196.0
+offset_right = 215.0
+offset_bottom = 212.0
+texture = ExtResource("5_d5vt5")
+stretch_mode = 2
+
+[node name="TextureRect7" type="TextureRect" parent="."]
+modulate = Color(0.133333, 0.137255, 0.137255, 1)
+layout_mode = 0
+offset_left = 199.0
+offset_top = 181.0
+offset_right = 215.0
+offset_bottom = 197.0
+texture = ExtResource("5_sk3uh")
+stretch_mode = 2
+
+[node name="TextureRect5" type="TextureRect" parent="."]
+modulate = Color(0.133333, 0.137255, 0.137255, 1)
+layout_mode = 0
+offset_left = 199.0
+offset_top = 292.0
+offset_right = 215.0
+offset_bottom = 308.0
+texture = ExtResource("5_lctdo")
+stretch_mode = 2
+
+[node name="TextureRect6" type="TextureRect" parent="."]
+modulate = Color(0.133333, 0.137255, 0.137255, 1)
+layout_mode = 0
+offset_left = 273.0
+offset_top = 325.0
+offset_right = 289.0
+offset_bottom = 341.0
+texture = ExtResource("5_lctdo")
+stretch_mode = 2

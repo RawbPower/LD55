@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cll165b5o56hd"]
+
+[ext_resource type="Script" path="res://Scripts/LevelTimer.gd" id="1_kpko3"]
+
+[node name="LevelTimer" type="Label"]
+custom_minimum_size = Vector2(32, 0)
+offset_right = 40.0
+offset_bottom = 14.0
+vertical_alignment = 1
+script = ExtResource("1_kpko3")

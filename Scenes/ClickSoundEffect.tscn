@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjw5e0mxmyuhy"]
+
+[ext_resource type="Script" path="res://Scripts/OneTimeSoundEffect.gd" id="1_dkalx"]
+[ext_resource type="AudioStream" uid="uid://h82qcphes2nt" path="res://Sounds/Click.wav" id="1_fiko1"]
+
+[node name="ClickPopSoundEffect" type="AudioStreamPlayer"]
+stream = ExtResource("1_fiko1")
+script = ExtResource("1_dkalx")

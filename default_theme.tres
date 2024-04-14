@@ -1,0 +1,22 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://dsi0bsyrrsnjq"]
+
+[ext_resource type="FontFile" uid="uid://bxv2cextln77m" path="res://Fonts/ChevyRay - Oeuf.ttf" id="1_ltglv"]
+[ext_resource type="StyleBox" uid="uid://d3l8me0fwfim6" path="res://light_9slice.tres" id="2_4uudk"]
+[ext_resource type="StyleBox" uid="uid://c27k1t1e5sg1w" path="res://selected_9slice.tres" id="3_hdya5"]
+
+[resource]
+Button/colors/font_color = Color(0.133333, 0.137255, 0.137255, 1)
+Button/colors/font_focus_color = Color(0.133333, 0.137255, 0.137255, 1)
+Button/colors/font_hover_color = Color(0.2, 0.388235, 0.737255, 1)
+Button/colors/font_hover_pressed_color = Color(0.2, 0.388235, 0.737255, 1)
+Button/colors/font_outline_color = Color(0.133333, 0.137255, 0.137255, 1)
+Button/colors/font_pressed_color = Color(0.2, 0.388235, 0.737255, 1)
+Button/font_sizes/font_size = 13
+Button/fonts/font = ExtResource("1_ltglv")
+Button/styles/focus = ExtResource("2_4uudk")
+Button/styles/hover = ExtResource("3_hdya5")
+Button/styles/normal = ExtResource("2_4uudk")
+Button/styles/pressed = ExtResource("3_hdya5")
+Label/colors/font_color = Color(0.133333, 0.137255, 0.137255, 1)
+Label/font_sizes/font_size = 13
+Label/fonts/font = ExtResource("1_ltglv")
